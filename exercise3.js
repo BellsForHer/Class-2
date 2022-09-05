@@ -1,11 +1,31 @@
-arrayOfMultiples(7, 5) 
+// arrayOfMultiples(7, 5) 
 
-function multiply(arr) {
-    let output = [];
-    for (let x of arr)
-    output.push(x * arr.length);
-    return output
+function getMultiples(integer, limit) {
+  let multiples = [];
+  
+  for(let i = integer; i<= limit; i= i+integer){
+    multiples.push(i);
+  }
+  return multiples;
 }
-console.log(multiply(7));
-// arrayOfMultiples(12, 10)
-// arrayOfMultiples(17, 6)
+getMultiples(7, 35); 
+
+function getMultiples(integer, limit) {
+  let multiples = [];
+  
+  for(let i = integer; i<= limit; i= i+integer){
+    multiples.push(i);
+  }
+  return multiples;
+}
+getMultiples(12, 120);
+
+function getMultiples(integer, limit) {
+  let multiples = [];
+  
+  for(let i = integer; i<= limit; i= i+integer){
+    multiples.push(i);
+  }
+  return multiples;
+}
+getMultiples(17, 102); 
